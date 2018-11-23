@@ -67,7 +67,7 @@ include_once('layout.php');
                     <button class="btn btn-outline-light btn-block" type="submit" name="submit_login">Access Account</button>
                   </fieldset>
                   <div class="alert alert-<?php if($var):if($var == 1):echo 'success';else:echo 'danger';endif;endif;?>">
-                    <small><?php echo $var == 1?"Registration Success":$var;?></small>
+                    <small><?php echo $var == 1?"Registration Success. You will be redirected in 5 secs. Please Wait...":$var;?></small>
                   </div>
                 </form>
               </div>

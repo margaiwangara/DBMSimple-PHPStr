@@ -1,5 +1,5 @@
 <?php
-
+if(session_status() !== PHP_SESSION_ACTIVE){ session_start(); }
 //require db
 require_once('database/db.php');
 //error var initialize
@@ -23,6 +23,11 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
       //check pass
       if(password_verify($password, $login_data['password'])){
+        $_SESSION['EMAIL'] = $email;
+        $_SESSION['ID'] = md5($login_data['id']);
+
+        //redirect to home
+        header('refresh:5;url = ../index.php');
         $var = 1;
       }
       else{

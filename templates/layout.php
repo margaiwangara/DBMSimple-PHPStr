@@ -1,6 +1,10 @@
 <?php
   //file path
   $file_path = __DIR__;
+
+  //set session
+  session_start();
+  
 ?>
 <!DOCTYPE html>
 <html lang="en">
