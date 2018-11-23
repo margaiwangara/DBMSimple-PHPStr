@@ -1,0 +1,66 @@
+#database-header .database-inner{
+  padding-top: 110px;
+}
+
+.navbar{
+  border-bottom: solid 3px #B44D09;
+}
+
+#signup-header{
+  background: url(../images/bg-image-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+
+#signup-header .dark-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  min-height: 700px;
+}
+#signup-header .signup-inner{
+  padding-top: 110px;
+}
+
+#signup-header .signup-inner .fa{
+  background: #B44D09;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+/** Login area **/
+#login-header{
+  background: url(../images/bg-image-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+
+#login-header .dark-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  min-height: 700px;
+}
+#login-header .login-inner{
+  padding-top: 110px;
+}
+
+#login-header .login-inner .fa{
+  background: #B44D09;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+#login-header .login-inner .card{
+  opacity: 0.8;
+}
