@@ -23,3 +23,7 @@ function sanitizer($data){
 
   return $data;
 }
+
+function presetPrice($data){
+  return '$'.number_format($data, 2);
+}

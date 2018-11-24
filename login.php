@@ -1,5 +1,5 @@
 <?php
-if(session_status() !== PHP_SESSION_ACTIVE){ session_start(); }
+if(session_status() === PHP_SESSION_NONE){ session_start(); }
 //require db
 require_once('database/db.php');
 //error var initialize
@@ -27,7 +27,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         $_SESSION['ID'] = md5($login_data['id']);
 
         //redirect to home
-        header('refresh:5;url = ../index.php');
+        header('refresh:5;url = home.php');
         $var = 1;
       }
       else{

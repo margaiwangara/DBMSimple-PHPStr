@@ -1,10 +1,10 @@
 <?php
   //file path
-  $file_path = __DIR__;
+  $file_path = 'dbmsimple.test';
 
   //set session
-  session_start();
-  
+  if(session_status() === PHP_SESSION_NONE){ session_start(); }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +22,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!--Custom CSS Files-->
-  <link rel="stylesheet" href="/Projects/DBMSimple/static/styles/styles.css">
+  <link rel="stylesheet" href="../static/styles/styles.css">
 
   <title>DBMSimple | <?php $title == ""? $title = "Sample Page":$title = $title; echo $title; ?></title>
 </head>
@@ -31,7 +31,7 @@
   <?php
 
     //include navbar
-    include_once('includes/navbar.html');
+    include_once('includes/navbar.php');
 
 
   ?>
