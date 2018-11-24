@@ -31,7 +31,7 @@ include_once('layout.php');
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <img src="../static/images/bg-image-2.jpg" alt="about-us-image" class="img-fluid rounded pr-2">
+          <img src="../static/images/bg-image-2.jpg" alt="about-us-image" class="img-fluid rounded">
         </div>
         <div class="col-md-6">
           <h4>About DBMSimple</h4>
