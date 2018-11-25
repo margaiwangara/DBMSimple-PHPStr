@@ -71,3 +71,7 @@
   color: #333;
   border-radius: 10px;
 }
+.table-fit{
+  width: auto !important;
+  table-layout: auto !important;
+}

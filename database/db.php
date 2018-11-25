@@ -25,5 +25,5 @@ function sanitizer($data){
 }
 
 function presetPrice($data){
-  return '$'.number_format($data, 2);
+  return '$'.number_format($data, 2,".","");
 }
