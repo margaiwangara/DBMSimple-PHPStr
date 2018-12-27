@@ -18,6 +18,12 @@
       <ul class="navbar-nav ml-auto">
         <?php if(isset($_SESSION['EMAIL'])):?>
           <li class="nav-item">
+            <a href="#" class="nav-link btn btn-outline-link">
+              <i class="fas fa-user-tie"></i>
+              Hello, <?php echo $_SESSION['EMAIL'];?>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="<?php echo $file_path.'../logout.php';?>" class="nav-link"><i class="fa fa-sign-out-alt"></i> Log Out</a>
           </li>
         <?php else:?>

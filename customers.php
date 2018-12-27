@@ -16,6 +16,7 @@ if(mysqli_num_rows($customers) > 0)
 
     //format date
     $date_of_birth [] = date("d M Y", strtotime($customer_data['date_of_birth']));
+    $id [] = $customer_data['id'];
   }
 
 }

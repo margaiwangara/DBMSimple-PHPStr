@@ -112,9 +112,9 @@ $departments = "CREATE TABLE IF NOT EXISTS department(
 //   echo "<h4>Table recopy failed because</h4>".mysqli_error($conn);
 
 
-// ON DELETE CASCADE, SET NULL, UPDATE
-// if(mysqli_query($conn, "ALTER TABLE products ADD CONSTRAINT FK_products_category FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE CASCADE"))
-//   echo "<h4>Table foreign key created successful</h4>";
-// else
-//   echo "<h4>Table foreign key creation failed</h4>";
+ON DELETE CASCADE, SET NULL, UPDATE
+if(mysqli_query($conn, "ALTER TABLE products ADD CONSTRAINT FK_products_category FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE CASCADE"))
+  echo "<h4>Table foreign key created successful</h4>";
+else
+  echo "<h4>Table foreign key creation failed</h4>";
 ?>
