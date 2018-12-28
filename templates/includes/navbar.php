@@ -14,6 +14,11 @@
         <li class="nav-item">
           <a href="database.php" class="nav-link" title="View Data"><i class="fa fa-database"></i> Summary</a>
         </li>
+        <li class="nav-item">
+          <a href="sqlops.php" class="nav-link" title="Sql Operations">
+            <i class="fa fa-database"></i> SQL
+          </a>
+        </li>
       </ul>
       <ul class="navbar-nav ml-auto">
         <?php if(isset($_SESSION['EMAIL'])):?>

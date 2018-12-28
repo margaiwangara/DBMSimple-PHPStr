@@ -55,6 +55,7 @@ include_once('layout.php');
                             <th>Surname</th>
                             <th>Email</th>
                             <th>Date of Birth</th>
+                            <th>Full Name</th>
                             <th></th>
                           </tr>
                           <?php foreach($name as $key=>$data): ?>
@@ -63,6 +64,7 @@ include_once('layout.php');
                               <td><?php echo $surname[$key]; ?></td>
                               <td><?php echo $email[$key]; ?></td>
                               <td><?php echo $date_of_birth[$key]; ?></td>
+                              <td class="text-capitalize"><?php echo $fullname[$key];?></td>
                               <td>
                                 <a class="btn btn-danger" title="Delete Customer" href="../deletecustomer.php?id=<?php echo $id[$key];?>">
                                   <i class="fas fa-user-minus"></i>
